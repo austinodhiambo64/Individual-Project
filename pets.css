@@ -76,12 +76,13 @@ button:hover {
   font-weight: 1000;
 }
 
-#pet-details,
+
 #pet-details * {
   color: rgb(34, 34, 32);
   font-style: italic;
   font-family: "Alkatra", cursive;
   font-size: 20px;
+  /* background: red; */
 }
 
 #exampleFormControlInput1 {
@@ -98,38 +99,43 @@ button:hover {
 .card-body{
   align-self: center;
   align-self: flex-end;
+  
 }
   
 #footer{
   height: 5%;
 }
 .like-glyph{
-  height: 15%;
-  width: 20%;
+  height: 250px;
+  width: 100px;
 }
 .like-glyph:hover {
     cursor: pointer;
     stroke: red;
+  }
+  .pet-actions{
+    display: flex;
+    background-color: brown;
   }
   
   .like-glyph.clicked {
     fill: red;
   }
   #input-form {
-    background-color: transparent;
-    border: 1px solid #0e0d0d;
     border-radius: 10px;
     padding: 20px;
-    width: 30%;
-    margin-left: 550px;
+    width: 40%;
     font-family: "Alkatra Curisive", cursive;
     text-align: center;
     color: rgb(15, 15, 15);
     font-size: 20px;
     justify-content: end;
+    background: rgba(197, 180, 162, 0.438);
+    display: block;
+    
   }
   .list-group{
-    width: 40%;
+    width: 400px;
   }
 ::placeholder {
     color: rgb(0, 0, 0);
@@ -150,7 +156,12 @@ button:hover {
   border: 1px solid black;
   margin: 10px;
   width: auto;
-  
+  background-image: url("https://images.unsplash.com/photo-1501898047706-55903296cd09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZHVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+background-repeat: no-repeat;
+background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #pet-img {
@@ -181,8 +192,8 @@ button:hover {
 }
 .home{
   width: 100%;
-  height: 90vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.0)), url("https://images.unsplash.com/photo-1570458436416-b8fcccfe883f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGNhdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  height: 100vh;
+  background-image: url("/images/cat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -200,6 +211,8 @@ button:hover {
   font-weight: 500;
   text-shadow: 0px 1px 1px black;
 }
-.row{
-display: flex;
+#content{
+background-image: url("https://images.unsplash.com/photo-1679823571624-85963f19724f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+background-repeat: no-repeat;
+background-size: cover;
 }

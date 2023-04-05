@@ -1,6 +1,7 @@
 {
   "pets": [
     {
+      "id": 1,
       "category": "dogs",
       "name": "Max",
       "age": 2,
@@ -8,9 +9,10 @@
       "description": "Max is a friendly and loyal dog who loves to play fetch.",
       "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZ3N8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "vaccinationDate": "2022-01-01",
-      "likes": 55
+      "likes": 57
     },
     {
+      "id": 2,
       "category": "dogs",
       "name": "Buddy",
       "age": 3,
@@ -18,9 +20,10 @@
       "description": "Buddy is a energetic and playful dog who loves long walks and running in the park.",
       "image": "https://images.unsplash.com/photo-1477973770766-6228305816df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRvZ3N8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "vaccinationDate": "2022-02-15",
-      "likes": 67
+      "likes": 69
     },
     {
+      "id": 3,
       "category": "dogs",
       "name": "Luna",
       "age": 1,
@@ -28,9 +31,10 @@
       "description": "Luna is a mischievous and adventurous dog who loves to explore her surroundings.",
       "image": "https://images.unsplash.com/photo-1562317305-58a17fe2c09e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRvZ3N8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "vaccinationDate": "2022-03-31",
-      "likes": 34
+      "likes": 37
     },
     {
+      "id": 4,
       "category": "dogs",
       "name": "Charlie",
       "age": 5,
@@ -38,9 +42,10 @@
       "description": "Charlie is a well-behaved and obedient dog who loves to cuddle.",
       "image": "https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRvZ3N8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "vaccinationDate": "2021-12-10",
-      "likes": 76
+      "likes": 78
     },
     {
+      "id": 5,
       "category": "dogs",
       "name": "Rocky",
       "age": 4,
@@ -48,9 +53,10 @@
       "description": "Rocky is a strong and determined dog who loves to protect his family.",
       "image": "https://images.unsplash.com/photo-1554692918-08fa0fdc9db3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGRvZ3N8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "vaccinationDate": "2022-04-20",
-      "likes": 54
+      "likes": 55
     },
     {
+      "id": 6,
       "category": "cats",
       "name": "Simba",
       "age": 2,
@@ -61,6 +67,7 @@
       "likes": 54
     },
     {
+      "id": 7,
       "category": "cats",
       "name": "Luna",
       "age": 1,
@@ -71,6 +78,7 @@
       "likes": 50
     },
     {
+      "id": 8,
       "category": "cats",
       "name": "Milo",
       "age": 4,
@@ -81,6 +89,7 @@
       "likes": 47
     },
     {
+      "id": 9,
       "category": "cats",
       "name": "Tiger",
       "age": 3,
@@ -91,6 +100,7 @@
       "likes": 37
     },
     {
+      "id": 10,
       "category": "birds",
       "name": "Tweety",
       "age": 1,
@@ -101,6 +111,7 @@
       "likes": 48
     },
     {
+      "id": 11,
       "category": "birds",
       "name": "Rio",
       "age": 2,
@@ -111,6 +122,7 @@
       "likes": 29
     },
     {
+      "id": 12,
       "category": "birds",
       "name": "Hedwig",
       "age": 3,
@@ -121,6 +133,7 @@
       "likes": 49
     },
     {
+      "id": 13,
       "category": "birds",
       "name": "Blue",
       "age": 1,
@@ -131,6 +144,7 @@
       "likes": 50
     },
     {
+      "id": 14,
       "category": "bunnies",
       "name": "Thumper",
       "age": 2,
@@ -141,6 +155,7 @@
       "likes": 23
     },
     {
+      "id": 15,
       "category": "bunnies",
       "name": "Bugs",
       "age": 1,
@@ -151,6 +166,7 @@
       "likes": 39
     },
     {
+      "id": 16,
       "category": "bunnies",
       "name": "Peter",
       "age": 3,
@@ -161,6 +177,7 @@
       "likes": 51
     },
     {
+      "id": 17,
       "category": "fish",
       "name": "Oreo",
       "age": 2,
@@ -171,6 +188,7 @@
       "likes": 57
     },
     {
+      "id": 18,
       "category": "fish",
       "name": "Snowball",
       "age": 1,

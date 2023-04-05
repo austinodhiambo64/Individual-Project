@@ -8,10 +8,6 @@ fetch("http://localhost:3000/pets")
 
 // set default animal on page load
 
-// fetch("http://localhost:3000/pets")
-// .then((response) => response.json())
-// .then((data) => displayPetDetails(data[4]))
-// .catch((error) => console.log(error));
 
 
 //selecting required variables
@@ -78,7 +74,13 @@ function displayPetNames(filteredPets) {
     span.textContent = pet.name;
     span.addEventListener("click", () => displayPetDetails(pet));
     petBar.appendChild(span);
+    const adopt = document.getElementById("adopt-btn");
+    const popUp = document.getElementById("input-form");
+    adopt.addEventListener("click", ()=> {
+    popUp.style.display = "block";
+  })
   });
+  
 }
 
 
@@ -97,38 +99,47 @@ function displayPetDetails(selectedPet) {
         <p id="pet-description"> Description: ${pet.description}</p>
         <p id="pet-likes">Likes: <span id="likes-count">${
           pet.likes || 0}</span></p>
-        <button type="button" class="btn btn-secondary btn-lg like-glyph">Like</button>
+          <div class="like mr-3">
+          Like! <span class="like-glyph">&#x2661;</span>
+        </div>
         <button type="button" class="btn btn-secondary btn-lg adopt-btn">Adopt</button>
       </ul>
+      <div id="input-form">
+      <!-- input for email -->
+      <div class="mb-3">
+        <label id="input-form" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">New Pet Name</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
       `;
-
-      const petName = document.querySelector('#pet-descri h5');
-  const floatingBubble = document.querySelector('.floating-bubble');
-
-  petName.addEventListener('click', () => {
-    floatingBubble.style.display = 'block';
-  });
-
-  //add event listener to like button
-  function displayPetDetails(pet) {
+  
+   const petName = document.querySelector('#pet-descri h5');
+  
     // check if element exists before adding event listener
     const likeGlyph = document.querySelector('.like-glyph');
     if (likeGlyph) {
       likeGlyph.addEventListener('click', function() {
         //update like count on db
-        fetch(`http://localhost:3000/pets/${pet.id}`, {
+        fetch(`http://localhost:3000/pets/${selectedPet.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ likes: pet.likes + 1 }),
+          body: JSON.stringify({ likes: pet.likes + 1}),
         })
         .then((response) => response.json())
         .then((updatedPet) => {
           const likesCount = document.getElementById('likes-count');
-          likesCount.textContent = updatedPet.likes;
+          likesCount.innerText = updatedPet.likes;
         })
+        
       });
     }
+
+   
 }
-}
+
