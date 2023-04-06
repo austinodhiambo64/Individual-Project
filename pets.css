@@ -84,13 +84,20 @@ button:hover {
   font-size: 20px;
   /* background: red; */
 }
-
+.form-label1{
+  height: 20px;
+  justify-content: center;
+  align-content: center;
+  padding: auto;
+  margin-bottom: 9px;
+  background-color: transparent;
+}
 #exampleFormControlInput1 {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 10px;
 }
-#exampleFormControlTextarea1 {
+#exampleInputPassword1 {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 10px;

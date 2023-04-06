@@ -107,13 +107,14 @@ function displayPetDetails(selectedPet) {
       <div id="input-form">
       <!-- input for email -->
       <div class="mb-3">
-        <label id="input-form" class="form-label">Email address</label>
+        <label id="input-form" class="form-label1">Email address</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">New Pet Name</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+    <label for="exampleInput1" class="form-label">Address</label>
+    <input type="addres" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-secondary">Submit</button>
     </div>
       `;
   
