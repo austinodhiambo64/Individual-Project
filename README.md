@@ -1,7 +1,10 @@
 # Pet Adoption Site
 ## Developer: Austin
 
-This project is a web application that allows users to search for available pets, view pet profiles, select and like a pet, and submit an input form to adopt a pet.
+This project is a web application that allows users to search for available pets, view pet profiles, select and like a pet, and submit an input form to adopt a pet. This web application not only provides a user-friendly platform for pet adoption but also helps promote responsible pet ownership by providing important information about pet care and welfare.
+
+
+
 
 ### MVPs
 1. Search for available pets by breed, age, and gender.
