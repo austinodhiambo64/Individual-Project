@@ -141,6 +141,41 @@ function displayPetDetails(selectedPet) {
       });
     }
 
+    //updating the users info
+  const express = require('express');
+  const bodyParser = require('body-parser');
+  const fs = require('fs');
+
+  const app = express();
+  app.use(bodyParser.json());
+
+  app.patch('/pets/:id', (req, res) => {
+  const { id } = req.params;
+  const { email, address } = req.body;
+
+  // Read the existing data from db.json
+  const rawData = fs.readFileSync('db.json');
+  const data = JSON.parse(rawData);
+
+  // Find the pet with the given ID and update its email and address
+  const pet = data.find(p => p.id === id);
+  if (pet) {
+    pet.email = email;
+    pet.address = address;
+
+    // Write the updated data back to db.json
+    fs.writeFileSync('db.json', JSON.stringify(data));
+
+    res.status(200).send('Pet updated successfully.');
+  } else {
+    res.status(404).send('Pet not found.');
+  }
+ });
+
+  app.listen(3000, () => {
+  console.log('Server listening on port 3000.');
+  });
+
    
 }
 
