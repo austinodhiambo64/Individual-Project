@@ -50,7 +50,8 @@ function filter(pets, cb) {
 fetchData("dogs");
 
 function fetchData(searchTerm) {
-  fetch(`http://localhost:3000/pets`)
+  fetch(`http://localhost:3000/pets?category=${searchTerm}`)
+
     .then(response => response.json())
     .then(data => {
       const filteredData = filter(data, pet => pet.category === searchTerm);
